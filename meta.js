@@ -21,6 +21,7 @@ function addMeta() {
 
     salvarNoLocalStorage();
     metasInput.value = "";
+    document.getElementById("valorMeta").value = "";
     concluirMeta();
 }
 
