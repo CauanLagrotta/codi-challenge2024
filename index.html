@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finan Flex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="" width="100px" height="100px" />
+      <div id="inputsHeader">
+        <input
+          type="number"
+          min="0"
+          step="0.01"
+          name="orçamento"
+          id="orcamento"
+          placeholder="0.00"
+          
+        />
+
+        <input
+          type="number"
+          min="0"
+          step="0.01"
+          name="reserva"
+          id="reserva"
+          placeholder="R$ 0.00"
+        />
+      </div>
+    </header>
+
+    <main>
+      <div id="entradas">
+        <!--Input para pegar a descricão da entrada-->
+        <input
+          type="text"
+          class="mainInput"
+          name="entrada"
+          id="entrada"
+          placeholder="Entrada: "
+        />
+        <!--Input para pegar o valor da entrada-->
+        <input
+          type="number"
+          class="mainInput"
+          name="valor"
+          id="valor"
+          placeholder="Valor: "
+        />
+        <!--Botão para concluir a entrada-->
+        <button
+          class="concluir"
+          type="submit"
+          id="botaoConcluirEntrada"
+          onclick="concluirEntrada()"
+        >
+          Concluir
+        </button>
+        <!--Ul para mostrar as entradas-->
+        <ul id="entradasLi">
+
+        </ul>
+      </div>
+
+      <!--Saidas seguinto a mesma lógica das entardas-->
+      <div id="saidas">
+        <input
+          type="text"
+          class="mainInput"
+          name="saida"
+          id="saida"
+          placeholder="Saídas: "
+        />
+
+        <input
+          type="number"
+          class="mainInput"
+          name="valorSaida"
+          id="valorSaida"
+          placeholder="Valor: "
+        />
+
+
+        <button
+          class="concluir"
+          id="botaoConcluirSaida"
+          type="submit"
+          onclick="concluirSaida()"
+        >
+          Concluir
+        </button>
+        <ul id="saidasLi">
+
+        </ul>
+      </div>
+
+      <!--Metas seguinto a mesma lógica das entradas e saidas-->
+      <div id="metas">
+        <input
+          type="text"
+          class="mainInput"
+          name="meta"
+          id="meta"
+          placeholder="Metas: "
+        />
+
+        <input
+          type="number"
+          class="mainInput"
+          name="valorMeta"
+          id="valorMeta"
+          placeholder="Valor: "
+        />
+
+        <button class="concluir" id="botaoConcluirMeta" type="submit">
+          Concluir
+        </button>
+        <ul id="metasLi">
+
+        </ul>
+      </div>
+    </main>
+
+    <script src="entrada.js"></script>
+    <script src="saida.js"></script>
+    <script src="meta.js"></script>
+  </body>
+</html>

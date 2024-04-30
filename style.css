@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom: solid 1px #8C52FF;
+}
+
+img{
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+#reserva, #orcamento{
+    padding: 15px;
+    border: none;
+    box-shadow: 2px 2px 2px #000;
+    border-radius: 20px;
+}
+
+#reserva{
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+main{
+    display: flex;
+}
+
+#entradas{
+    width: 450px;
+    height: 100vh;
+    border-right: solid 1px #8C52FF;
+}
+
+#saidas{
+    width: 450px;
+    height: 100vh;
+    border-right: solid 1px #8C52FF;
+}
+
+#metas{
+    width: 450px;
+    height: 100vh;
+}
+
+
+.concluir{
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 100px;
+    border: none;
+    margin-right: 10px;
+    background-color: #8C52FF;
+    color: #fff;
+    box-shadow: 2px 2px 2px #000;
+    cursor: pointer;
+
+}
+
+.mainInput{
+    padding: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px #000;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+/*=========== Entradas ===========*/
+#valorEntrada{
+    padding-left: 10px;
+    width: 80px;
+    background-color: #318E2D;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+#valorEntrada::placeholder{
+    color: #fff;
+}	
+
+.entradajs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #318E2D;
+    margin-top: 10px;
+    border: solid 2px #fff;
+   
+    
+}
+
+.entradajs p {
+    margin-right: auto; 
+    margin-left: 5px;
+}
+
+.entradajs img {
+    margin-left: 10px; 
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/*========= Saidas =========*/
+
+.valorSaida {
+    padding-left: 10px;
+    width: 80px;
+    background-color: #FF2020;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    
+}
+
+.valorSaida::placeholder{
+    color: #fff;
+}
+
+.saidajs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #FF2020;
+    margin-top: 10px;
+   border: solid 2px #fff;
+    
+}
+
+.saidajs p {
+    margin-right: auto; 
+    margin-left: 5px;
+}
+
+.saidajs img {
+    margin-left: 10px; 
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/*========= Metas =========*/
+
+.valorMeta {
+    padding-left: 10px;
+    width: 80px;
+    background-color: #FF2020;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    
+}
+
+.valorMeta::placeholder{
+    color: #fff;
+}
+
+.metajs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #CFC94A;
+    margin-top: 10px;
+    border: solid 2px #fff;
+    
+}
+
+.metajs p {
+    margin-right: auto; 
+    margin-left: 5px;
+}
+
+.metajs img {
+    margin-left: 10px; 
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/*======================RESPONSIVIDADE==============================*/
+
+/* para dispositivos menores que 768px de largura */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #reserva, #orcamento {
+        margin: 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #entradas, #saidas, #metas {
+        width: 100%;
+        border-right: none;
+        border-bottom: solid 1px #8C52FF;
+        height: auto;
+    }
+
+    .mainInput {
+        margin-left: 10px;
+    }
+
+    .entradajs, .saidajs, .metajs {
+        margin-top: 5px;
+    }
+}
+
+/* para dispositivos menores que 576px de largura */
+@media (max-width: 576px) {
+    #reserva, #orcamento {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .mainInput {
+        margin-left: 0;
+    }
+
+    #valorEntrada, .valorSaida, .valorMeta {
+        width: 100%;
+    }
+}
